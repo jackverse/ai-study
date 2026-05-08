@@ -1,0 +1,5 @@
+docs/**
+video/**
+.claude
+docker/minio/**
+docker/mysql/**

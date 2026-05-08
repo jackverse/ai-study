@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.generator.dao.PageDao">
+
+    <select id="selectBySiteId" resultType="io.renren.modules.generator.entity.PageEntity">
+        select * from page 
+        where site_id = #{siteId}
+        order by created_at asc
+    </select>
+
+    <select id="selectByIdAndUserId" resultType="io.renren.modules.generator.entity.PageEntity">
+        select * from page 
+        where id = #{id} and user_id = #{userId}
+    </select>
+
+</mapper>

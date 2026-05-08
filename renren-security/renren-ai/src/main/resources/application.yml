@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: renren-ai
+  ai:
+    openai:
+      # MiniMax API（OpenAI 兼容模式）
+      base-url: https://api.minimax.chat/v
+      api-key: ${MINIMAX_API_KEY:your-api-key-here}
+      chat:
+        options:
+          model: MiniMax-Text-01
+          temperature: 0.7
+
+# 日志配置
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    io.renren.modules.ai: DEBUG
