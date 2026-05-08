@@ -1,6 +1,6 @@
-docs/**
-video/**
+docs/*
+video/*
 .claude
-docker/minio/**
-docker/mysql/**
-ai-study-ui/
+docker/minio/*
+docker/mysql/*
+ai-study-ui/*
