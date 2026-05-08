@@ -41,6 +41,6 @@ services:
     container_name: ai-study-redis
     restart: always
     ports:
-      - "6379:6379"
+      - "6380:6379"
     volumes:
       - ./redis/data:/data
