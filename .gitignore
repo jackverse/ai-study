@@ -3,4 +3,4 @@ video/**
 .claude
 docker/minio/**
 docker/mysql/**
-ai-study-ui/**
+ai-study-ui/
